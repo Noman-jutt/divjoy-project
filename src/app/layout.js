@@ -1,5 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import "@/util/analytics";
+import Chat from "@/components/Chat";
+import { AuthProvider } from "@/util/auth";
+import { ThemeProvider } from "@/util/theme";
+import { QueryClientProvider } from "@/util/db";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +18,34 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <QueryClientProvider>
+        <ThemeProvider>
+          <AuthProvider>
+            <Chat />
+            <>
+              <Navbar
+                color="default"
+                logo="https://uploads.divjoy.com/logo.svg"
+                logoInverted="https://uploads.divjoy.com/logo-white.svg"
+              />
+
+              {children}
+
+              <Footer
+                bgColor="light"
+                size="normal"
+                bgImage=""
+                bgImageOpacity={1}
+                description="A short description of what you do here"
+                copyright={`© ${new Date().getFullYear()} Company`}
+                logo="https://uploads.divjoy.com/logo.svg"
+                logoInverted="https://uploads.divjoy.com/logo-white.svg"
+                sticky={true}
+              />
+            </>
+          </AuthProvider>
+        </ThemeProvider>
+      </QueryClientProvider>
     </html>
   );
 }
