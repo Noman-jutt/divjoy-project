@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import Alert from "@material-ui/lab/Alert";
+import Alert from '@mui/material/Alert';
 import { useRouter } from "next/navigation";
 import Meta from "@/components/Meta";
 import PageLoader from "@/components/PageLoader";

@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
-import Box from "@material-ui/core/Box";
+import Box from "@mui/material/Box";
 import Link from "next/link";
-import { makeStyles } from "@material-ui/core/styles";
+import makeStyles from '@mui/styles/makeStyles';
 
 const useStyles = makeStyles((theme) => ({
   root: {

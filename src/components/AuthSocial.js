@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState } from "react";
-import Button from "@material-ui/core/Button";
-import CircularProgress from "@material-ui/core/CircularProgress";
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
+import makeStyles from '@mui/styles/makeStyles';
 import { useAuth } from "@/util/auth";
 
 const useStyles = makeStyles((theme) => ({

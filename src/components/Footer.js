@@ -1,15 +1,15 @@
 'use client'
 import React from "react";
-import Container from "@material-ui/core/Container";
+import Container from "@mui/material/Container";
 import Link from "next/link";
-import Typography from "@material-ui/core/Typography";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@mui/material/Typography";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import makeStyles from '@mui/styles/makeStyles';
 import Section from "@/components/Section";
 import { useDarkMode } from "@/util/theme";
-import Box from "@material-ui/core/Box";
+import Box from "@mui/material/Box";
 
 const useStyles = makeStyles((theme) => ({
   sticky: {

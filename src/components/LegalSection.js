@@ -1,10 +1,10 @@
 'use client'
 import React from "react";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 import Link from "next/link";
-import Box from "@material-ui/core/Box";
-import Container from "@material-ui/core/Container";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Section from "@/components/Section";
 import LegalTerms from "@/components/LegalTerms";
 import LegalPrivacy from "@/components/LegalPrivacy";

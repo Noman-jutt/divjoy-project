@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
-import Box from "@material-ui/core/Box";
-import Alert from "@material-ui/lab/Alert";
+import Box from "@mui/material/Box";
+import Alert from '@mui/material/Alert';
 import { useRouter } from "next/navigation";
 import AuthForm from "@/components/AuthForm";
 import AuthSocial from "@/components/AuthSocial";
