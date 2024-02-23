@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection/HeroSection";
 import ClientsSection from "@/components/ClientsSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
